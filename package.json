@@ -1,7 +1,7 @@
 {
   "name": "kouczing",
   "version": "1.0.0",
-  "description": "",
+  "description": "test",
   "scripts": {
     "hello": "node src/hello.js"
   },
