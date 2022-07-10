@@ -10,5 +10,8 @@
     "url": "git+https://github.com/Mercurical/kouczing.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
 }
