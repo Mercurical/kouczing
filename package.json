@@ -1,0 +1,14 @@
+{
+  "name": "kouczing",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "hello": "node src/hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mercurical/kouczing.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
