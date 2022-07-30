@@ -1,19 +1,19 @@
 //1.1 Wypisz zawartość 5 komórki tablicy na ekran. Zmień zawartość 7 komórki tablicy, wprowadzając do niej wartość 12.
 const tab1 = [7, 3, 1, 6, 9, 5, 4, 10, 2, 2];
-console.log(tab1[4]);
+// console.log(tab1[4]);
 tab1[6] = 12;
 //1.2 Utwórz drugą tablicę o nazwie tab2, o tej samej wielkości co tab1. Przepisz zawartość tab1 do tab2.
 let tab2 = tab1;
-console.log(tab2);
+// console.log(tab2);
 //1.3 Utwórz trzecią tablicę o nazwie tab3, o tej samej wielkości co dwie poprzednie. Zawartością komórek tablicy tab3 jest suma komórek o tych samych indeksach tablic tab1 i tab2.
 let tab3 = tab1;
 for(let i = 0 ; i < tab1.length ; i++){
     tab3[i] = tab3[i] + tab2[i];
 }
-console.log(tab3);
+// console.log(tab3);
 //1.4 Przepisz ponownie zawartość tablicy tab1 do tablicy tab2, jednak w odwrotnej kolejności.
 tab2 = tab1.reverse();
-console.log(tab2);
+// console.log(tab2);
 
 //2.1 Wypełnij tablicę wartościami podanymi przez użytkownika.
 const tab = [7, 3, 1, 6, 9, 5, 4, 10, 2, 2];
@@ -57,7 +57,7 @@ function liczba3(array:number []){
 function sortuj(a: number, b: number){
     return a - b;
 }
-console.log(tab.sort(sortuj))
+// console.log(tab.sort(sortuj))
 //2.6 Znajdź medianę elementów tablicy.
 function mediana(array: number[]){
     if (array.length %2 !== 0)
@@ -72,17 +72,17 @@ function pierwsze3(array: number[]){
 function ostatni(array: number[]){
     return array.pop()
 }
-console.log(pierwsze3(tab));
-console.log(ostatni(tab));
-console.log(ostatni(tab));
-console.log(ostatni(tab));
+// console.log(pierwsze3(tab));
+// console.log(ostatni(tab));
+// console.log(ostatni(tab));
+// console.log(ostatni(tab));
 //2.8 Zwiększ wartość każdego elementu tablicy podnosząc go do kwadratu.
 function kwadrat(array: number[]){
     for(let i = 0; i < array.length; i++)
     array[i]= array[i]*array[i];
     return array;
 }
-console.log(kwadrat(tab));
+// console.log(kwadrat(tab));
 //2.9 Policz ilość liczb parzystych i nieparzystych w tablicy.
 function sumujP(array: number[]) {
     let sumaP = 0;
@@ -107,13 +107,13 @@ function podzielna3(array: number[]){
     licznik ++
     return licznik
 }
-console.log(podzielna3(tab));
+// console.log(podzielna3(tab));
 //3.1 Wypełnij ją literami wprowadzonymi przez użytkownika
 let tablica1: string[];
 //3.2 Wypełnij ją 10 literowym wyrazem podanym przez użytkownika.
 let slowo = 'podzielnos';
 tablica1 = [...slowo];
-console.log(tablica1);
+// console.log(tablica1);
 //3.3 Zamień wszystkie wielkie litery na małe i odwrotnie.
 function zamianaNaDuze(array: string[]){
     return array.map(wyraz => wyraz.toUpperCase())
@@ -149,7 +149,7 @@ function max1(array: number []){
     }
     return {max, licznik};
 }
-console.log(max1(losowanie(t)));
+// console.log(max1(losowanie(t)));
 
 //4.2 Wyświetl na ekran liczby nieparzyste.
 
@@ -165,13 +165,13 @@ function losowanie2(array: number[]){
     array[i]=Math.floor(Math.random() * 100);
     return array=array.filter((item: number) => item % 2 == 0);
 }
-console.log(losowanie(tablica2))
+// console.log(losowanie(tablica2))
 //4.4 Program policzy ile liczb zawiera się w przedziale <5, 15) , po czym wypisze te liczby na ekran.
 function zliczanie2(array: number[]){
     array = array.filter((item: number) => item > 5);
     return array =array.filter((item: number) => item < 16);
 }
-console.log(zliczanie2(losowanie2(tablica2)));
+// console.log(zliczanie2(losowanie2(tablica2)));
 
 //4.5 Znajdź element najbliższy wartością wprowadzonej przez użytkownika liczbie „a”.
 
@@ -196,8 +196,8 @@ function min2(array: number []){
     min = array[i];
     return min;
 }
-console.log(min2(losowanie2(tablica2))-1);
-console.log(max2(losowanie2(tablica2))+1);
+// console.log(min2(losowanie2(tablica2))-1);
+// console.log(max2(losowanie2(tablica2))+1);
 
 //4.7 Przepisać do nowej tablicy te elementy, których wartość jest >10. Nowa tablica ma mieć rozmiar równy ilości tych elementów.
 
@@ -207,7 +207,7 @@ function nowa(array: number[]){
 let tablica3: number[] =[];
 losowanie(tablica2);
 tablica3=nowa(tablica2);
-console.log(tablica3)
+// console.log(tablica3)
 
 //4.8 Utwórz nową tablicę 100 elementową. Wypełnij ją w taki sposób, aby
 //B[i] = A[1] + A[2] + A[3] + … + A[i],
@@ -219,7 +219,7 @@ function sortuj2(a: number, b: number){
     return b - a;
 }
 losowanie(tablica2);
-console.log(tablica2.sort(sortuj2))
+// console.log(tablica2.sort(sortuj2))
 
 //4.10 Podaj ile liczb zawartych w tablicy jest podzielna bez reszty przez 3.
 
@@ -231,7 +231,7 @@ function zliczanie(array: number[]){
     return licznik;
 }
 losowanie(tablica2);
-console.log(zliczanie(tablica2));
+// console.log(zliczanie(tablica2));
 
 //5
 
