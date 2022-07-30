@@ -19,7 +19,7 @@ console.log(tab2);
 const tab = [7, 3, 1, 6, 9, 5, 4, 10, 2, 2];
 //2.2 Znajdź najmniejszy i największy element w tablicy.
 
-function max(array: number []){
+export function max(array: number []){
     let max = 0;
     let licznik= 0;
     for(let i = 0; i<array.length; i++)
@@ -29,7 +29,7 @@ function max(array: number []){
     if(array[i] == max){
         licznik++
     }
-    return {max, licznik};
+    return max;
 }
 function min(array: number []){
     let min = array[0];
@@ -126,7 +126,7 @@ function losowo(array: string[]){
     return 
 }
 
-4
+// 4
 
 let t: number[] = [];
 function losowanie(array: number[]){
@@ -258,7 +258,7 @@ function potega2(array: number[]){
 
 // 5.3Wypełni tablicę ciągiem liczb: 3, 6, 9, 12, …
 
-function ciag(array: number[]){
+function ciag2(array: number[]){
     array[0]=3;
     for(let i= 1; i < liczba; i++)
     array[i]=array[i]*array[0];
