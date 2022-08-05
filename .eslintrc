@@ -8,6 +8,6 @@
       "fbjs/strict"
     ],
     "rules": {
-
+      "one-var": 0
     }
   }

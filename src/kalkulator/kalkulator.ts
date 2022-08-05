@@ -1,7 +1,7 @@
-function suma(a: number, b: number) {
+function suma (a: number, b: number) {
     return a + b;
 }
-function minus(a: number, b: number) {
+function minus (a: number, b: number) {
     return a - b;
 }
 
