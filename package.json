@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "test",
   "scripts": {
-    "hello": "node src/hello.js"
+    "hello": "node src/hello.js",
+    "lint": "eslint ./src --ext .ts",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -11,7 +13,19 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-fbjs": "^4.0.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-ft-flow": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-shopify": "^35.1.0",
+    "hermes-eslint": "^0.9.0",
+    "husky": "^8.0.0",
     "typescript": "^4.7.4"
   }
 }
